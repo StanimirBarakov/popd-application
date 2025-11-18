@@ -5,8 +5,8 @@
 # Force all Java files to be counted as Java
 *.java linguist-language=Java
 
-# Keep HTML templates counted normally
-src/main/resources/templates/* linguist-vendored=false
+# Ignore HTML templates completely for language stats
+src/main/resources/templates/* linguist-vendored=true
 
 # Exclude static assets (CSS, JS, images) from language statistics
 src/main/resources/static/* linguist-vendored=true
