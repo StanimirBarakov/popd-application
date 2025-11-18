@@ -1,5 +1,8 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
 
-src/main/resources/templates/* linguist-vendored=true
+# Treat Thymeleaf HTML templates as Java (so Java stays dominant)
+src/main/resources/templates/*.html linguist-language=Java
+
+# Static assets shouldn't distort the language percentages
 src/main/resources/static/* linguist-vendored=true
