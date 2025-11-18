@@ -1,8 +1,12 @@
+# Set line endings for Maven wrapper
 /mvnw text eol=lf
 *.cmd text eol=crlf
 
-# Ensure HTML templates are counted normally (NOT vendored)
+# Force all Java files to be counted as Java
+*.java linguist-language=Java
+
+# Keep HTML templates counted normally
 src/main/resources/templates/* linguist-vendored=false
 
-# Exclude static assets (CSS/JS/images) from language statistics
+# Exclude static assets (CSS, JS, images) from language statistics
 src/main/resources/static/* linguist-vendored=true
